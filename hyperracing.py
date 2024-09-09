@@ -27,6 +27,3 @@ print(pt_stats_results)
 #build a pivot table for teams
 pt_stats_results = pd.pivot_table(df_stats['results'],index=['Team'],values='Points', aggfunc = 'sum', columns=['Season'], margins=True)
 print(pt_stats_results)
-
-#show some graphics
-df_stats['results'].plot(x='Driver',y='Points',kind='bar')
